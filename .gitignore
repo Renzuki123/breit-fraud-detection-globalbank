@@ -216,3 +216,34 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+
+##########################
+# Kedro
+
+# Local configuration (no compartir configuraciones locales)
+conf/local/**
+!conf/local/.gitkeep
+
+# Credenciales
+conf/**/*credentials*
+
+# Telemetry
+.telemetry
+
+# Kedro Viz
+.viz
+
+
+# Datos (Kedro)
+data/**
+
+# Mantener la estructura de carpetas
+!data/**/
+
+# Mantener los .gitkeep
+!.gitkeep
+
+# MLflow
+mlruns/*
